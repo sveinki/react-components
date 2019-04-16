@@ -37,7 +37,7 @@ const DeleteSection = () => {
             <Row>
                 <Label htmlFor="deleteButton">{c('Label').t`Irreversible action`}</Label>
                 <ErrorButton id="deleteButton" onClick={open}>{c('Action').t`Delete your account`}</ErrorButton>
-                <DeleteAccountModal show={isOpen} onClose={close} clientType={1} />
+                <DeleteAccountModal show={isOpen} onClose={close} />
             </Row>
         </>
     );
